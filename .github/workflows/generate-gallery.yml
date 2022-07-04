@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   generate_gallery:
     runs-on: ubuntu-latest
@@ -20,4 +23,3 @@ jobs:
         with:
           branch: gh-pages
           folder: gallery
-          github_token: ${{ secrets.GITHUB_TOKEN }} 
