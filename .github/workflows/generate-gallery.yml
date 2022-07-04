@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g thumbsup
-      - run: sudo apt install ffmpeg
+      - run: sudo apt install ffmpeg gifsicle dcraw exiftool graphicsmagick
       - run: thumbsup --input ./photos --output ./gallery --embed-exif
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.0
