@@ -20,4 +20,4 @@ jobs:
         with:
           branch: gh-pages
           folder: gallery
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
