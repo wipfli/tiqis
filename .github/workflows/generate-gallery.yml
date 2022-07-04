@@ -13,3 +13,9 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g thumbsup
+      - run: thumbsup --input ./photos --output ./gallery --embed-exif
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages
+          folder: gallery
